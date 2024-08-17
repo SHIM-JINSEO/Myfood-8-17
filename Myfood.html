@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        header{
+            background-color: white;
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            height: 70px;
+        }
+        header>div{
+            padding: 5px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #food{
+            padding-top: 100px; 
+
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+
+            border-bottom: 1px solid grey;
+        }
+        #food>div{
+            width: 23%;
+            text-align: center;
+        }
+        .container{
+            background-color: yellow;
+            width: 100%;
+            height: 55%;
+        }
+        .container>img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #intorduction{
+            max-width: 900px;
+            text-align: center;
+            border-bottom: 1px solid grey;
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        footer>div{
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: row;
+        }
+        .footerItem{
+            padding: 20px;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+        .footerItem:nth-child(2)>div{
+            display: flex;
+
+        }
+        .footerImg{
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .footerImg>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #taglist{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #taglist>div{
+            background-color: grey;
+            color: white;
+            padding: 1px;;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><h2>menu</h2></div>
+        <div><h2>My food</h2></div>
+        <div><h2>Mail</h2></div>
+        
+    </header>
+    <main>
+        <div id="food">
+            <div>
+                <div class="container"><img src="image1.png" alt=""></div>
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div>
+                <div class="container"><img src="image2.png" alt=""></div>
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div>
+                <div class="container"><img src="image3.png" alt=""></div>
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum. <br>What else?</p>
+            </div>
+            
+            <div>
+                <div class="container"><img src="image4.png" alt=""></div>
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div>
+                <div class="container"><img src="image5.png" alt=""></div>
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div>
+                <div class="container"><img src="image6.png" alt=""></div>
+                <h3>Salmon For Your Skin</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div>
+                <div class="container"><img src="image7.png" alt=""></div>
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div>
+                <div class="container"><img src="image8.png" alt=""></div>
+                <h3>Le French</h3>
+                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div id="intorduction">
+            <h2>About Me, The Food Man</h2>
+            <div><img src="profile.png" alt=""></div>
+            <h3>I am Who I Am!</h3>
+            <p>With Passion For Real, Good Food</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut asperiores nisi illum dolore similique, suscipit cupiditate dolor quos rerum. Ipsa dignissimos veritatis voluptatibus! Adipisci cumque, consequatur inventore expedita ipsam sed necessitatibus nulla nemo iste aliquid libero? Reprehenderit minus suscipit vitae odio incidunt sequi id deleniti facere ipsa. Repellendus, quaerat!</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="footerItem">
+                <h2>FOOTER</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam exercitationem fugit ab ea tempore eum rerum dignissimos ut est optio?</p>
+            </div>
+            <div class="footerItem">
+                <h2>BLOG POSTS</h2>
+                <div style="border-bottom: 1px solid grey; padding-bottom: 10px;">
+                    <div class="footerImg"><img src="lorem.png" alt=""></div>
+                    <p>Lorem</p>
+                </div>
+                <div style="padding-top: 10px;">
+                    <div class="footerImg"><img src="ipsum.png" alt=""></div>
+                    <p>Ipsum</p>
+                </div>
+            </div>
+            <div class="footerItem">
+                <h2>POPULAR TAGS</h2>
+                <div id="taglist">
+                    <div>Travel</div>
+                    <div>NewYork</div>
+                    <div>Dinner</div>
+                    <div>Salmon</div>
+                    <div>France</div>
+                    <div>Drinks</div>
+                    <div>Ideas</div>
+                    <div>Flavors</div>
+                    <div>Suisine</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
